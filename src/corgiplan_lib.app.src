@@ -7,7 +7,7 @@
     stdlib
    ]},
   {env,[]},
-  {modules, []},
+  {modules, [cogiplan_executor, corgiplan_job, corgitoken_validator, init_db]},
 
   {licenses, ["Apache 2.0"]},
   {links, []}
