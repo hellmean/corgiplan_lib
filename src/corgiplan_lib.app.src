@@ -1,14 +1,16 @@
-{application, corgiplan_lib,
+{application,
+ corgiplan_lib,
  [{description, "An OTP library"},
   {vsn, "0.1.0"},
   {registered, []},
-  {applications,
-   [kernel,
-    stdlib
-   ]},
-  {env,[]},
-  {modules, [cogiplan_executor, corgiplan_job, corgitoken_validator, init_db]},
-
+  {applications, [kernel, stdlib]},
+  {env, []},
+  {modules,
+   [cogiplan_executor,
+    corgiplan_job,
+    corgitoken_validator,
+    init_db,
+    corgiplan_job_state_manager,
+    corgiplan_job_state_reader]},
   {licenses, ["Apache 2.0"]},
-  {links, []}
- ]}.
+  {links, []}]}.
